@@ -1,7 +1,7 @@
 export default function Layout({ children }) {
     return (
 
-        <div>
+        <div className="background-image url()">
             <header className="flex items-center justify-between p-4 text-white">
                 <div>LOGO</div>
                 <nav>
@@ -17,7 +17,7 @@ export default function Layout({ children }) {
             </header>
 
             <div>{children}</div>
-            <footer className="p-4 bg-gray-800 text-white absolute bottom-0 w-full "> 
+            <footer className="p-4 bg-green-700 text-white absolute bottom-0 w-full "> 
                  <p>Universidade da Região  - UNI(c) 2025</p>
             </footer>
         </div>
