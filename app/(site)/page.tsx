@@ -5,7 +5,7 @@ export default function Home(){
         
            
             
-            <main className={"bg-gray-500"}>
+            <main>
                 <div >
                     <div style={{ color: 'white', textAlign: 'center', marginTop: '20%' }}>
                         <h1>Graduação Uni</h1>

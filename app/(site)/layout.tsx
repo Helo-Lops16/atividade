@@ -1,10 +1,11 @@
 export default function Layout({ children }) {
     return (
 
-        <div className="background-image url()">
-            <header className="flex items-center justify-between p-4 text-white">
-                <div>LOGO</div>
-                <nav>
+        <div>
+            <section className="bg-[url('./public/image/incio.jpg')] bg-cover bg-center h-[400px]">
+                <header className="flex items-center justify-between p-4 text-white">
+                    <div>LOGO</div>
+                    <nav>
                     <ul className="flex items-center gap-3">
                            
                         <a href="#">Início</a>
@@ -13,14 +14,17 @@ export default function Layout({ children }) {
                         <a href="#">Contatos</a>
                 
                     </ul>
-                </nav>
-            </header>
+                    </nav>
+                </header>
+            </section>
+            
 
             <div>{children}</div>
             <footer className="p-4 bg-green-700 text-white absolute bottom-0 w-full "> 
                  <p>Universidade da Região  - UNI(c) 2025</p>
             </footer>
         </div>
+
     )
 }
 
