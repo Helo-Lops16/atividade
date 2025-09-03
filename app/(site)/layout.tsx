@@ -16,9 +16,9 @@ export default function Layout({ children }) {
                         </div>
                     </ul>
                 </nav>
-                <div style={{ color: 'white', textAlign: 'center', justifyContent: 'center', alignItems: 'center', paddingTop: '150px', fontFamily: 'Saira-Custtom', fontSize:'100px' }}>
+                <div style={{ color: 'white', textAlign: 'center', justifyContent: 'center', alignItems: 'center', paddingTop: '150px', fontFamily: 'Saira-Custtom', fontSize:'75px' }}>
                     <h1>GRADUAÇÃO UNI</h1>
-                    <button >Embarque</button>
+                    <button style={{padding:'10px 10px 10px 10px'}}>Embarque</button>
                 </div>
             </section>
             <div>{children}</div>
