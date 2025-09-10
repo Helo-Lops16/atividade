@@ -39,11 +39,13 @@ export default function Home() {
         
         
         <div className="md:w-1/3">
-          <h2 className="text-3xl font-bold text-green-900 uppercase mb-4">
+          <h2 className="text-4xl font-bold text-green-900 uppercase mb-4">
             Conheça<br />nossos<br />cursos
           </h2>
-          <p className="text-green-800 mb-6">Um universo de oportunidades.</p>
-          <button className="flex items-center gap-2 text-green-800 font-bold underline hover:text-green-600 transition text-1x1">
+          <br />
+          <p className="text-green-800 mb-6 text-2x1">Um universo de oportunidades.</p>
+          <br />
+          <button className="flex items-center gap-2 text-green-800 font-bold underline hover:text-green-600 transition s-20">
             Confira
             <span className="text-2xl">→</span>
           </button>
@@ -59,7 +61,7 @@ export default function Home() {
               height={300}
               className="w-full h-full object-cover"
             />
-            <div className="absolute bottom-0 left-0 right-0  bg-opacity-0 text-white text-center py-2">
+            <div className="absolute bottom-0 left-0 right-0  text-white text-center py-2">
               Publicidade
             </div>
           </div>
