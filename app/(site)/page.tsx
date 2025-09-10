@@ -158,7 +158,7 @@ export default function Home() {
 
 
     <section
-      className="relative bg-cover bg-center bg-no-repeat w-full h-[300px] md:h-[400px] flex items-center justify-end px-6 md:px-20"
+      className=" bg-cover bg-center   w-310 h-[300px] md:h-[400px] flex items-center justify-end px-6 "
         style={{
             backgroundImage: `url('/imagem/foguete.jpg')`,
         }}
