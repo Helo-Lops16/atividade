@@ -98,17 +98,58 @@ export default function Home() {
 
 
 
-    <section className=" text-white py-16 px-6 w-full mt-20"> 
-         <h1 className="text-3xl font-bold text-green-900 mb-4">
-          O que dizem nossos alunos
-        </h1>
-        
-    </section>   
+    <section className="flex flex-wrap justify-between items-center px-16 py-16 bg-white">
 
+      <div className="max-w-lg">
+        <h2 className="text-2xl font-bold text-green-900 mb-6">
+          O QUE DIZEM NOSSOS ALUNOS
+        </h2>
 
+        <div className="bg-white">
+          <div className="flex items-center mb-4">
+            <Image
+              src="/imagem/perfil.jpg"
+              alt="Foto do aluno José Luiz"
+              width={50}
+              height={50}
+              className="rounded-full mr-4"
+            />
+            <div>
+              <strong className="text-green-900 text-lg block">
+                JOSÉ LUIZ
+              </strong>
+              <p className="text-gray-500 uppercase text-xs">
+                Formado em Publicidade pela UNIVILLE
+              </p>
+            </div>
+          </div>
 
-       
+          <p className="text-gray-800 italic mb-6">
+            “Muito show o curso eu a-do-rei.”
+          </p>
 
+          <div className="flex gap-4">
+            <button className="w-9 h-9 rounded-full bg-gray-200 text-gray-700 hover:bg-gray-300 transition">
+              ←
+            </button>
+            <button className="w-9 h-9 rounded-full bg-green-700 text-white hover:bg-green-800 transition">
+              →
+            </button>
+          </div>
+        </div>
+      </div>
+
+   
+      <div className="max-w-md mt-8 md:mt-0 ml-[250px]">
+        <Image
+          src="/imagem/homem.jpg"
+          alt="José Luiz segurando troféu"
+          width={400}
+          height={500}
+          className="rounded-lg"
+        />
+      </div>
+    </section>
     </main>
   );
 }
