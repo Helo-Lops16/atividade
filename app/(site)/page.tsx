@@ -112,7 +112,7 @@ export default function Home() {
               alt="Foto do aluno José Luiz"
               width={50}
               height={50}
-              className="rounded-full mr-4"
+              className="rounded-3xl mr-4"
             />
             <div>
               <strong className="text-green-900 text-lg block">
@@ -148,6 +148,41 @@ export default function Home() {
           height={500}
           className="rounded-lg"
         />
+      </div>
+    </section>
+
+
+
+
+
+
+
+    <section
+      className="relative bg-cover bg-center bg-no-repeat w-full h-[300px] md:h-[400px] flex items-center justify-end px-6 md:px-20"
+        style={{
+            backgroundImage: `url('/imagem/foguete.jpg')`,
+        }}
+        >
+      <div className=" p-6 md:p-10 rounded-md max-w-lg text-white">
+        <h2 className="font-bold text-lg md:text-2xl mb-4">
+          RECEBA MAIS <br /> INFORMAÇÕES
+        </h2>
+        <p className="mb-4 text-sm md:text-base">
+          Preencha o campo abaixo para receber mais informações sobre o seu curso.
+        </p>
+        <form className="flex flex-col sm:flex-row gap-3">
+          <input
+            type="email"
+            placeholder="Seu endereço de e-mail"
+            className="bg-white flex-grow rounded-md px-3 py-2 text-black"
+          />
+          <button
+            type="submit"
+            className="bg-green-900 text-white rounded-md px-4 py-2 hover:bg-green-800 transition"
+          >
+            Receber informações
+          </button>
+        </form>
       </div>
     </section>
     </main>
