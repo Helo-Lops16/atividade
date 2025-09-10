@@ -1,10 +1,11 @@
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center h-screen bg-gray-100">
       <div className="text-center max-w-3xl">
-      <img src="/imagens-atividade-university/1-pagina/sobre-unville.png"  />
+        
         
         <div className="ml-[300px] max-w-md mx-auto p-6"> 
             <h1 className="text-2xl font-bold text-green-900 mb-4">

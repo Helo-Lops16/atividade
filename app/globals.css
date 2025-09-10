@@ -4,10 +4,11 @@
   --backgroung-image: url('/public/incio.jpg');
   --foreground: #171717;
 }
-
-:main {
-  image: url('/public/imagens atividade university/1 pagina/ ')
+ 
+main {
+  --image: url('/imagens-atividade-university/1%20pagina/fundo.jpg');
 }
+
 
 
 @theme inline {
