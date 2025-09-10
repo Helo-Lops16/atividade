@@ -34,12 +34,12 @@ export default function Home() {
         
       </div>
      
-            <section className="bg-gray-200 py-16 px-6 mt-20">
+    <section className="bg-gray-200 py-16 px-6 mt-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-start gap-10">
         
         
         <div className="md:w-1/3">
-          <h2 className="text-4xl font-bold text-green-900 uppercase mb-4">
+          <h2 className="text-4xl w-285 font-bold text-green-900 uppercase mb-4">
             Conheça<br />nossos<br />cursos
           </h2>
           <br />
