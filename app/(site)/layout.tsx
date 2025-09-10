@@ -3,7 +3,7 @@ import SearchBar from "@/components/SearchBar";
 export default function Layout({ children }) {
   return (
     <div className="flex flex-col min-h-screen">
-     
+      {/* HEADER */}
       <section className="bg-[url('/inicio.png')] bg-cover bg-center h-[500px] w-full">
         <nav className="flex items-center justify-between px-6 py-4 text-white font-saira">
           <ul className="flex items-center gap-6">
@@ -16,7 +16,19 @@ export default function Layout({ children }) {
         </nav>
 
      
-        <footer className="bg-gray-800 text-white py-8 px-4">
+        <div className="flex flex-col items-center justify-center text-center text-white pt-36">
+          <h1 className="text-[75px] font-saira">GRADUAÇÃO UNI</h1>
+          <button className="mt-6 px-6 py-3 bg-green-600 rounded-lg hover:bg-green-700 transition">
+            Embarque
+          </button>
+        </div>
+      </section>
+
+ 
+      <main className="flex-1">{children}</main>
+
+  
+      <footer className="bg-green-800 text-white py-8 px-4">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-wrap justify-between">
               {/* Três colunas idênticas */}
@@ -39,16 +51,6 @@ export default function Layout({ children }) {
             <p>Universidade da Região – UNI(c) 2025</p>
           </div>
         </footer>
-        
-      </section>
-
- 
-      <main className="flex-1">{children}</main>
-
-  
-      <footer className="p-4 bg-green-700 text-white text-center">
-        <p>Universidade da Região - UNI © 2025</p>
-      </footer>
     </div>
   );
 }
