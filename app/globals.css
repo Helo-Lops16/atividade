@@ -5,6 +5,9 @@
   --foreground: #171717;
 }
 
+:main {
+  image: url('/public/imagens atividade university/1 pagina/ ')
+}
 
 
 @theme inline {

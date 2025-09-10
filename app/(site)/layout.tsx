@@ -1,32 +1,37 @@
 import SearchBar from "@/components/SearchBar";
+
 export default function Layout({ children }) {
-    return (
+  return (
+    <div className="flex flex-col min-h-screen">
+      {/* HEADER */}
+      <section className="bg-[url('/inicio.png')] bg-cover bg-center h-[500px] w-full">
+        <nav className="flex items-center justify-between px-6 py-4 text-white font-saira">
+          <ul className="flex items-center gap-6">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Cursos</a></li>
+            <li><a href="#">Contatos</a></li>
+          </ul>
+          <SearchBar /> {/* 🔍 */}
+        </nav>
 
-       
-        <div>
-            <section className="bg-[url('/inicio.png')] bg-cover bg-center h-[500px] w-full">
-                <nav>
-                    <ul className="flex items-center gap-3 justify-between">
-                        <div className="flex items-center gap-3 justify-between text-white font-saira">
-                            <a href="#">Início</a>
-                            <a href="#">Sobre</a>
-                            <a href="#">Cursos</a>
-                            <a href="#">Contatos</a>
-                            <SearchBar /> {/* 🔍 aqui entra a lupa */}
-                        </div>
-                    </ul>
-                </nav>
-                <div style={{ color: 'white', textAlign: 'center', justifyContent: 'center', alignItems: 'center', paddingTop: '150px', fontFamily: 'Saira-Custtom', fontSize:'75px' }}>
-                    <h1>GRADUAÇÃO UNI</h1>
-                    <button style={{padding:'10px 10px 10px 10px'}}>Embarque</button>
-                </div>
-            </section>
-            <div>{children}</div>
-            <footer className="p-4 bg-green-700 text-white absolute bottom-0 w-full "> 
-                 <p>Universidade da Região  - UNI(c) 2025</p>
-            </footer>
+     
+        <div className="flex flex-col items-center justify-center text-center text-white pt-36">
+          <h1 className="text-[75px] font-saira">GRADUAÇÃO UNI</h1>
+          <button className="mt-6 px-6 py-3 bg-green-600 rounded-lg hover:bg-green-700 transition">
+            Embarque
+          </button>
         </div>
+      </section>
 
-    )
+ 
+      <main className="flex-1">{children}</main>
+
+  
+      <footer className="p-4 bg-green-700 text-white text-center">
+        <p>Universidade da Região - UNI © 2025</p>
+      </footer>
+    </div>
+  );
 }
 

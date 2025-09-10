@@ -24,7 +24,7 @@ export default function SearchBar() {
           type="text"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
-          placeholder="Pesquisar..."
+          placeholder="Procura por um ulian?"
           className="ml-2 px-3 py-1 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500 transition w-48"
         />
       )}
